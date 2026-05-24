@@ -71,6 +71,8 @@ describe('Catalog Page', () => {
     cy.get('#Slider-template--25528457199917__featured-collection').should('contain', '$40.00')
   })
 
+  test
+
   it('The About page includes the history paragraph', () => {
     cy.visit('https://realbeans-plzkdwtn.myshopify.com')
     cy.get('input[type="password"]').type('laicha')
