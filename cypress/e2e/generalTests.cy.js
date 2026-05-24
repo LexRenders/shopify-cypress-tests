@@ -5,7 +5,6 @@ describe('Catalog Page', () => {
     cy.get('input[type="password"]').type('laicha')
     cy.get('button[type="submit"]').click()
     cy.visit('https://realbeans-plzkdwtn.myshopify.com/collections/all')
-    cy.get('button[id="shopify-pc__banner__btn-accept"]').click()
     cy.get('a[href="/products/blended-coffee-5kg"]').should('be.visible')
     cy.get('a[href="/products/roasted-coffee-beans-5kg-1"]').should('be.visible')
   })
@@ -15,7 +14,6 @@ describe('Catalog Page', () => {
     cy.get('input[type="password"]').type('laicha')
     cy.get('button[type="submit"]').click()
     cy.visit('https://realbeans-plzkdwtn.myshopify.com/collections/all')
-    cy.get('button[id="shopify-pc__banner__btn-accept"]').click()
     cy.get('select[name="sort_by"]').first().select('price-ascending')
 
     cy.wait(5000)
